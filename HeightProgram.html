@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p> Height in meters(m):</p>
+        <input type="number" id="data">
+        <button onclick="compute()">result</button>
+        <p id="result">
+
+        </p>
+        <script>
+            function compute(){
+                var x = document.getElementById("data").value;
+                var h = x * 39.37;
+                var foot = parseInt(h /12);
+                var inch = parseInt(h - (foot*12));
+                document.getElementById("result").innerHTML = foot+" feet "+inch+" inch";
+            }
+        </script>
+
+    </body>
+</html>
